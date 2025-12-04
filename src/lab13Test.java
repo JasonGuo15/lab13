@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,8 +14,8 @@ public class lab13Test
 	Integer[] expectedResult1;
 	Integer[] expectedResult2;
 	Integer[] expectedResult3;
-	String inputFilename = "lab13_input_data.txt";
-	String expectedResultsFilename = "lab13_expected_results.txt";
+	String inputFilename = "src/lab13_input_data.txt";
+	String expectedResultsFilename = "src/lab13_expected_results.txt";
 
 	@BeforeEach
 	public void setUp() throws Exception 
@@ -83,37 +84,37 @@ public class lab13Test
 
     @Test
     void testGetTotalCount() {
-        assertEquals(1000, lab.getTotalCount());
+        Assertions.assertEquals(1000, lab.getTotalCount());
     }
 
     @Test
     void testGetOddCount() {
-        assertEquals(507, lab.getOddCount());
+        Assertions.assertEquals(507, lab.getOddCount());
     }
 
     @Test
     void testGetEvenCount() {
-        assertEquals(493, lab.getEvenCount());
+        Assertions.assertEquals(493, lab.getEvenCount());
     }
 
     @Test
     void testDistinctGreaterThanFiveCount() {
-        assertEquals(94, lab.getEvenCount());
+        Assertions.assertEquals(94, lab.getDistanceGreaterThanFiveCount());
     }
 
     @Test
     void testGetResult() {
-        assertArrayEquals(expectedResult1, lab.getResult());
+        Assertions.assertArrayEquals(expectedResult1, lab.getResult());
     }
 
     @Test
     void testGetResult2() {
-        assertArrayEquals(expectedResult2, lab.getResult2());
+        Assertions.assertArrayEquals(expectedResult2, lab.getResult2());
     }
 
     @Test
     void testGetResult3() {
-        assertArrayEquals(expectedResult3, lab.getResult3());
+        Assertions.assertArrayEquals(expectedResult3, lab.getResult3());
     }
 
 }
