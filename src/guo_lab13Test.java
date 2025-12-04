@@ -1,6 +1,5 @@
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
@@ -8,9 +7,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class lab13Test 
+public class guo_lab13Test
 {
-	lab13 lab;
+	guo_lab13 lab;
 	Integer[] expectedResult1;
 	Integer[] expectedResult2;
 	Integer[] expectedResult3;
@@ -21,7 +20,7 @@ public class lab13Test
 	public void setUp() throws Exception 
 	{
 		// instantiate an instance of lab13
-		lab = new lab13();
+		lab = new guo_lab13();
 		
 		// read the input values and populate the ArrayList<Integer> in the lab13 class
 		lab.readData(inputFilename);

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import static java.lang.Integer.parseInt;
 
-class lab13
+class guo_lab13
 {
     private ArrayList<Integer> arrayList = new ArrayList<>();
 
